@@ -1,27 +1,31 @@
 {
-  "name": "warc",
-  "version": "1.0.1",
+  "name": "warc-wsdl",
+  "version": "1.0.0",
   "description": "Parse WARC (Web Archive Files) as a node.js stream",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/tape test/*.js"
+    "test": [
+      "node_modules/.bin/tape test/*.js",
+      "standard"
+    ]    
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eugeneware/warc"
+    "url": "https://github.com/machawk1/warc"
   },
   "keywords": [
     "warc",
-    "common-crawl",
     "stream",
     "streaming"
   ],
-  "author": "Eugene Ware <eugene@noblesamurai.com>",
+  "author": "Mat Kelly <mkelly@cs.odu.edu>",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/eugeneware/warc/issues"
+    "url": "https://github.com/machawk1/warc/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+      "standard" :"*"
+  },
   "devDependencies": {
     "http-parser-js": "^0.1.0",
     "tape": "^3.0.1",
