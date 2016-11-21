@@ -14,7 +14,7 @@ will only process the first gzipped chunk.
 
 ## Installation
 
-This module is installed via npm:
+The module from this fork is based may be installed via npm:
 
 ``` bash
 $ npm install warc
