@@ -2,15 +2,15 @@
 
 Parse WARC (Web Archive Files) as a node.js stream
 
-[![build status](https://secure.travis-ci.org/eugeneware/warc.png)](http://travis-ci.org/eugeneware/warc)
+[![build status](https://secure.travis-ci.org/machawk1/warc.png)](http://travis-ci.org/machawk1/warc)
+[![standard](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 This stream parses the Web Archive file format as used by the
 [Common Crawl](http://commoncrawl.org/the-data/get-started/) project.
 
 NB: That this stream doesn't do any gzip decompression, it assumes a
 decompressed WARC file format. The WARC files that use used by common-crawl
-are actually multi-part Gzip files, and there is a [big bug](https://github.com/joyent/node/pull/6442) with the `zlib` library which is present as of the time of writing (node `0.10.32`) which
-will only process the first gzipped chunk.
+are actually multi-part Gzip files, and there is a [big bug](https://github.com/joyent/node/pull/6442) with the `zlib` library which is present as of the time of writing (node `0.10.32`) which will only process the first gzipped chunk.
 
 ## Installation
 
